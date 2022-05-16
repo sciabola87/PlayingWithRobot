@@ -8,11 +8,11 @@ Library  SeleniumLibrary
 *** Test Cases ***
 
 Verifica semplice funzionalita per eBay
-    [Dovumentation]  Questo caso di Test verifica la ricerca su eBay
+    [Documentation]  Questo caso di Test verifica la ricerca su eBay
     [Tags]  Functional
 
 #apro il browser
-    Open Bowser  http://www.ebay.com  chrome
+    Open Browser  http://www.ebay.com  chrome
 
 #imposto un tempo di attesa di 2 secondi
     Set Browser Implicit Wait  2
@@ -21,12 +21,12 @@ Verifica semplice funzionalita per eBay
     sleep  2
 
 #Inserisco il testo desiderato dentro la TextBox desiderata (tramite xpath)
-    Input Text //*[@id="gh-ac"]  mobile
+    Input Text  //*[@id="gh-ac"]  mobile
     Set Browser Implicit Wait  2
     sleep  2
 
 #Premo il pulsante per avviare la ricerca
-    Press Key  //*[@id="gh-btn"]  [Return]
+    Press Keys  //*[@id="gh-btn"]  [Return]
     Set Browser Implicit Wait  2
     sleep  2
 
@@ -39,4 +39,4 @@ Verifica semplice funzionalita per eBay
     Close Browser
 
 
-*** Kexwords ***
+*** Keywords ***
